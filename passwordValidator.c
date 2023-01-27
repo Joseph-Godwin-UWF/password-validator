@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void){
+int main(int argc, char *argv[]){
 	
-	printf("Hello World!\n");
-	
+	for(int curr = 1; curr < argc; curr++)
+		printf("%s\n", argv[curr]);
 	return 0;
 }
